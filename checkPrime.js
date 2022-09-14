@@ -1,6 +1,6 @@
 function checkPrime(number){
     let count=0;
-    for(let i=1;i<=number;i++){
+    for(let i=2;i*i<=number;i++){
         if(number%i==0){
             count++;
         }
@@ -12,4 +12,9 @@ function checkPrime(number){
         console.log("It is not a Prime number");
     }
 }
-checkPrime(13);
+checkPrime(2);
+checkPrime(3);
+checkPrime(5);
+checkPrime(4);
+checkPrime(2000);
+checkPrime(1555);
